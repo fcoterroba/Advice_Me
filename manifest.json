@@ -1,0 +1,21 @@
+{
+"manifest_version": 2,
+"name": "Advice me",
+"description": "Millions of free advices every time you click",
+"version": "1.0.1",
+"icons": {
+"32": "favicon.png",
+"64": "logo.png",
+"128": "logo.png"
+},
+"background": {
+    "persistent": true,
+    "scripts": [
+        "background.js"
+    ]
+},
+"browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+}
+}
