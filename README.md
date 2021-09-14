@@ -7,6 +7,14 @@ That's an extension which provides advices every time you need it
 ## Where can I download it?
 Right now it's only possible to use in [Mozilla](https://addons.mozilla.org/es/firefox/addon/advice-me/)
 
+Waiting Opera's answer to publish it
+
+Waiting Microsoft's answer to publish it 
+
+Waiting to get 5$ USD to upload it to **Chrome Web Store**
+
+If you want, you can contribute financially via [Paypal](https://www.paypal.com/paypalme/fcoterroba) (write a descriptive message). Your name will be added forever to the repository
+
 ## How can I contribute?
 You just submit your quotes **in English** doing pull request, editing the js' file and adding your quote. **Please** add it to the end
 
