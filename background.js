@@ -102,6 +102,7 @@ var randomArray = [
   '“Learn to light a candle in the darkest moments of someone’s life. Be the light that helps others see; it is what gives life its deepest significance.”',
   '“Atticus, he was real nice.” “Most people are, Scout, when you finally see them.',
   "“If you believe something needs to exist, if it's something you want to use yourself, don't let anyone ever stop you from doing it.”",
+  "“People often say that motivation doesn't last. Well, neither does bathing -- that's why we recommend it daily.”",
 ];
 document.write('<button>I need advice</button>');
 document.addEventListener('click', function () {
