@@ -103,6 +103,7 @@ var randomArray = [
   '“Atticus, he was real nice.” “Most people are, Scout, when you finally see them.',
   "“If you believe something needs to exist, if it's something you want to use yourself, don't let anyone ever stop you from doing it.”",
   "“People often say that motivation doesn't last. Well, neither does bathing -- that's why we recommend it daily.”",
+  "“Your time is limited, so don't waste it living someone else's life.”",
 ];
 document.write('<button>I need advice</button>');
 document.addEventListener('click', function () {
