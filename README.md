@@ -20,7 +20,7 @@ If you want, you can contribute financially via [Paypal](https://www.paypal.com/
 
 ## How can I contribute?
 
-You have submit your quotes **in English** through making a pull request, editing the `background.js` file and add your quote. **Please** add your quote in the last line.
+You have to submit your quotes **in English** through making a pull request. You have to add your quote in the `background.js` file. **Please** add your quote in the last line.
 
 If you don't know about Git, you can make an issue too.
 
