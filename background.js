@@ -99,7 +99,8 @@ var randomArray = [
     "“You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You’re on your own. And you know what you know. And YOU are the one who’ll decide where to go…”",
     "“It’s the possibility of having a dream come true that makes life interesting.”",
     "“There is some good in this world, and it’s worth fighting for.”",
-    "“Learn to light a candle in the darkest moments of someone’s life. Be the light that helps others see; it is what gives life its deepest significance.”"
+    "“Learn to light a candle in the darkest moments of someone’s life. Be the light that helps others see; it is what gives life its deepest significance.”",
+    "“Don't judge each day by the harvest you reap but by the seeds that you plant.”"
 ]
 document.write("<button>I need advice</button>")
 document.addEventListener("click", function(){
