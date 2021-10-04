@@ -104,5 +104,6 @@ var randomArray = [
 ]
 document.write("<button>I need advice</button>")
 document.addEventListener("click", function(){
-    document.querySelector('.frase').innerHTML = randomArray[Math.floor(Math.random() * 11)]
+    var frase = document.querySelector('.frase');
+    frase.innerHTML = randomArray.filter(quote => quote !== frase.innerHTML)[Math.floor(Math.random() * 11)]
 });
