@@ -99,9 +99,70 @@ var randomArray = [
     "“You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You’re on your own. And you know what you know. And YOU are the one who’ll decide where to go…”",
     "“It’s the possibility of having a dream come true that makes life interesting.”",
     "“There is some good in this world, and it’s worth fighting for.”",
-    "“Learn to light a candle in the darkest moments of someone’s life. Be the light that helps others see; it is what gives life its deepest significance.”"
+    "“Learn to light a candle in the darkest moments of someone’s life. Be the light that helps others see; it is what gives life its deepest significance.”",
+    "“Things work out best for those who make the best of how things work out.”",
+    "“To live a creative life, we must lose our fear of being wrong.”",
+    "“Change your life today. Don’t gamble on the future, act now, without delay.”",
+    "“The best dreams happen when you’re awake.”",
+    "“Excuses are for people who don’t want it bad enoug.”",
+    "“Most people have no idea of the giant capacity we can immediately command when we focus all of our resources on mastering a single area of our lives.”",
+    "“Enthusiasm moves the world.”",
+    "“Innovation distinguishes between a leader and a follower.”",
+]
+
+var randomArrayEs = [
+    "“El único modo de hacer un gran trabajo es amar lo que haces.”",
+    "“Nunca pienso en las consecuencias de fallar un gran tiro… cuando se piensa en las consecuencias se está pensando en un resultado negativo.”",
+    "“El dinero no es la clave del éxito; la libertad para poder crear lo es.”",
+    "“Cuanto más duramente trabajo, más suerte tengo.”",
+    "“La inteligencia consiste no sólo en el conocimiento, sino también en la destreza de aplicar los conocimientos en la práctica.”",
+    "“El trabajo duro hace que desaparezcan las arrugas de la mente y el espíritu.”",
+    "“Escoge un trabajo que te guste, y nunca tendrás que trabajar ni un solo día de tu vida.”",
+    "“Un sueño no se hace realidad por arte de magia, necesita sudor, determinación y trabajo duro.”",
+    "“Cuéntamelo y me olvidaré. enséñamelo y lo recordaré. involúcrame y lo aprenderé.”",
+    "“La lógica te llevará de la a a la z. la imaginación te llevará a cualquier lugar.”",
+    "“A veces la adversidad es lo que necesitas encarar para ser exitoso.”",
+    "“Para tener éxito tu deseo de alcanzarlo debe ser mayor que tu miedo al fracaso.”",
+    "“Ejecuta tus conocimientos con la maestría del que sigue aprendiendo.”",
+    "“Cuando pierdas, no pierdas la lección.”",
+    "“No busques los errores, busca un remedio.”",
+    "“La vida es una aventura, atrévete.”",
+    "“Tu actitud, no tu aptitud, determinará tu altitud.”",
+    "“Tienes que hacer las cosas que crees que no puedes hacer.”",
+    "“Si te caíste ayer, levántate hoy.”",
+    "“Siempre parece imposible... hasta que se hace .”",
+    "“Si no pierdes, no puedes disfrutar de las victorias.”",
+    "“No dejes que el miedo se interponga en tu camino.”",
+    "“Haz de cada día tu obra maestra.”",
+    "“No cuentes los días, haz que los días cuenten.”",
+    "“El mejor momento del día es ahora.”",
+    "“Si la oportunidad no llama, construye una puerta.”",
+    "“Deja que cada hombre ejerza el arte que domina.”",
+    "“El valor de una idea radica en su uso.”",
+    "“Piensa, sueña, cree y atrévete.”",
+    "“Con autodisciplina casi todo es posible.”",
+    "“Los obstáculos son esas cosas atemorizantes que ves cuando apartas los ojos de tu meta.”",
+    "“Asegúrate de que colocas tus pies en el lugar correcto, y luego mantente firme.”",
+    "“Las ideas pueden cambiar la vida. A veces a lo único que tienes que abrir la puerta es a una buena idea.”",
+
 ]
 document.write("<button>I need advice</button>")
 document.addEventListener("click", function(){
     document.querySelector('.frase').innerHTML = randomArray[Math.floor(Math.random() * 11)]
 });
+
+// Motivación en español
+try {
+    var ln = window.navigator.language || navigator.browserLanguage;
+    if (ln == 'es') {
+        document.write("</br></br><button>Necesito motivación</button>")
+        document.addEventListener("click", function(){
+            document.querySelector('.frase').innerHTML = randomArrayEs[Math.floor(Math.random() * 11)]
+        });
+
+    }
+
+} catch (error) {
+    // expected output: ReferenceError: nonExistentFunction is not defined
+    // Note - error messages will vary depending on browser
+}
