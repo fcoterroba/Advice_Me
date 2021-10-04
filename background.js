@@ -102,8 +102,8 @@ var randomArray = [
     "“Learn to light a candle in the darkest moments of someone’s life. Be the light that helps others see; it is what gives life its deepest significance.”",
     "“Don't judge each day by the harvest you reap but by the seeds that you plant.”"
 ]
-document.write("<button>I need advice</button>")
-document.addEventListener("click", function(){
+
+function display(){
     var frase = document.querySelector('.frase');
     frase.innerHTML = randomArray.filter(quote => quote !== frase.innerHTML)[Math.floor(Math.random() * 11)]
-});
+}
