@@ -101,10 +101,10 @@ var randomArray = [
     "“There is some good in this world, and it’s worth fighting for.”",
     "“Learn to light a candle in the darkest moments of someone’s life. Be the light that helps others see; it is what gives life its deepest significance.”"
 ]
-document.write("<button>I need advice</button>")
-document.addEventListener("click", function(){
-    document.querySelector('.frase').innerHTML = randomArray[Math.floor(Math.random() * 11)]
-});
+
+function changePhrase(){
+    document.querySelector('.phrase').innerHTML = randomArray[Math.floor(Math.random() * 11)];
+};
 
 function changeBackground(){
     var element = document.body;
