@@ -105,3 +105,8 @@ document.write("<button>I need advice</button>")
 document.addEventListener("click", function(){
     document.querySelector('.frase').innerHTML = randomArray[Math.floor(Math.random() * 11)]
 });
+
+function changeBackground(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}

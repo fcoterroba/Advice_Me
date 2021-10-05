@@ -2,21 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <style type="text/css">
-    @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
-        body{
-            max-width:200px;
-            max-height:400px;
-        }
-        button{
-            width: 100%;
-        }
-        p{
-            font-family: 'Lexend Peta', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <label id="switch" class="switch">
+        <input type="checkbox" onchange="changeBackground()" id="slider">
+        <span class="slider round"></span>
+    </label>
     <p class="frase">Did you need strength to continue?</p>
     <script src="background.js"></script>
 </body>
