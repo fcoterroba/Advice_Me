@@ -107,3 +107,19 @@ function display(){
     var frase = document.querySelector('.frase');
     frase.innerHTML = randomArray.filter(quote => quote !== frase.innerHTML)[Math.floor(Math.random() * 11)]
 }
+
+fetch('https://api.github.com/repos/fcoterroba/Advice_Me/contributors?per_page=1&anon=true', {
+    headers: {'Accept': 'application/vnd.github.v3+json'},
+})
+.then(data => {
+    console.log(Array.from(data.headers))
+    const found = data.headers.get('Link').match('page=(?<contributors>[0-9]+)>; rel="last"$');
+    const contributors = found.groups.contributors;
+    var text = `
+    <a href="https://github.com/fcoterroba/">@fcoterroba</a>
+    and
+    <a href="https://github.com/fcoterroba/Advice_Me/graphs/contributors">${contributors}</a>
+    persons supports you ❤️`;
+    var footer = document.querySelector('.footer');
+    footer.innerHTML = text;
+})
