@@ -103,7 +103,12 @@ var randomArray = [
     "“Don't judge each day by the harvest you reap but by the seeds that you plant.”"
 ]
 
-function display(){
-    var frase = document.querySelector('.frase');
-    frase.innerHTML = randomArray.filter(quote => quote !== frase.innerHTML)[Math.floor(Math.random() * 11)]
-}
+
+function changePhrase(){
+    document.querySelector('.phrase').innerHTML = randomArray[Math.floor(Math.random() * 11)];
+};
+
+function changeBackground(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
