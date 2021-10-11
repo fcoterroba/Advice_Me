@@ -111,7 +111,8 @@ function changePhrase(){
 function changeBackground(){
     var element = document.body;
     element.classList.toggle("dark-mode");
-  
+}
+
 fetch('https://api.github.com/repos/fcoterroba/Advice_Me/contributors?per_page=1&anon=true', {
     headers: {'Accept': 'application/vnd.github.v3+json'},
 })
@@ -126,5 +127,5 @@ fetch('https://api.github.com/repos/fcoterroba/Advice_Me/contributors?per_page=1
     persons supports you ❤️`;
     var footer = document.querySelector('.footer');
     footer.innerHTML = text;
-})  
+})
 
