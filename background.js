@@ -100,7 +100,8 @@ var randomArray = [
     "“It’s the possibility of having a dream come true that makes life interesting.”",
     "“There is some good in this world, and it’s worth fighting for.”",
     "“Learn to light a candle in the darkest moments of someone’s life. Be the light that helps others see; it is what gives life its deepest significance.”",
-    "“Don't judge each day by the harvest you reap but by the seeds that you plant.”"
+    "“Don't judge each day by the harvest you reap but by the seeds that you plant.”",
+    "“I never dreamed about success, I worked for it.”"
 ]
 
 
