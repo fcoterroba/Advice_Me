@@ -51,7 +51,7 @@ var randomArray = [
     "“Very often, a change of self is needed more than a change of scene.”",
     "“Leaders can let you fail and yet not let you be a failure.”",
     "“It’s not the load that breaks you down, it’s the way you carry it.”",
-	"You’re so much stronger than your excuses.",    
+	"You’re so much stronger than your excuses.",
     "Don’t compare yourself to others. Be like the sun and the moon and shine when it’s your time.",
     "Don’t Quit",
     "Don’t tell everyone your plans, instead show them your results.",
@@ -70,7 +70,7 @@ var randomArray = [
     "“You can do anything you set your mind to.”",
     "“All we can do is the best we can do.”",
     "“You never know what you can do until you try.”",
-    "“Twenty years from now you’ll be more disappointed by the things you did not do than the ones you did.”",    
+    "“Twenty years from now you’ll be more disappointed by the things you did not do than the ones you did.”",
     "“I am thankful for all of those who said NO to me. It’s because of them I’m doing it myself.”",
     "It’s okay to outgrow people who don’t grow. Grow tall anyways.",
     "When you feel like giving up just remember that there are a lot of people you still have to prove wrong.",
@@ -111,4 +111,21 @@ function changePhrase(){
 function changeBackground(){
     var element = document.body;
     element.classList.toggle("dark-mode");
+}
+
+fetch('https://api.github.com/repos/fcoterroba/Advice_Me/contributors?per_page=1&anon=true', {
+    headers: {'Accept': 'application/vnd.github.v3+json'},
+})
+.then(data => {
+    console.log(Array.from(data.headers))
+    const found = data.headers.get('Link').match('page=(?<contributors>[0-9]+)>; rel="last"$');
+    const contributors = found.groups.contributors;
+    var text = `
+    <a href="https://github.com/fcoterroba/">@fcoterroba</a>
+    and
+    <a href="https://github.com/fcoterroba/Advice_Me/graphs/contributors">${contributors}</a>
+    persons supports you ❤️`;
+    var footer = document.querySelector('.footer');
+    footer.innerHTML = text;
+})
 
