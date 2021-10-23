@@ -105,7 +105,22 @@ var randomArray = [
 
 
 function changePhrase(){
-    document.querySelector('.phrase').innerHTML = randomArray[Math.floor(Math.random() * 11)];
+    let new_quote = "";
+    switch(document.getElementById('quotes-origin').value){
+        case 'local':
+            new_quote = randomArray[Math.floor(Math.random() * 11)];
+            document.querySelector('.phrase').innerHTML = new_quote;   
+            break;
+        case 'chuck':
+            fetch('https://api.chucknorris.io/jokes/random', {})
+            .then(response => response.json())
+            .then(data => {
+                new_quote = data.value;
+                document.querySelector('.phrase').innerHTML = new_quote;   
+            })
+            break;
+    }
+ 
 };
 
 function changeBackground(){
