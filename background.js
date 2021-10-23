@@ -129,3 +129,20 @@ fetch('https://api.github.com/repos/fcoterroba/Advice_Me/contributors?per_page=1
     footer.innerHTML = text;
 })
 
+fetch('https://libretranslate.com/languages', {})
+.then(response => response.json())
+.then(data => {
+    console.log(data);
+    languages_html = data.map(lang => {return `<option value='${lang.code}'>${lang.name}</option>`});
+    document.getElementById("languages-list").innerHTML = languages_html;
+    to_translate = document.querySelector('.phrase').innerHTML;
+    const res = fetch("https://libretranslate.com/translate", {
+        method: "POST",
+        body: JSON.stringify({
+            q: to_translate,
+            source: "en",
+            target: document.getElementById("languages-list").value
+	        }),
+	    headers: { "Content-Type": "application/json" }
+    }).then(response => response.json()).then(data => document.querySelector('.phrase').innerHTML = data.translatedText);  
+})
