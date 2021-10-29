@@ -7,8 +7,12 @@ button{
     width: 100%;
 }
 
-p{
+p,footer{
     font-family: 'Lexend Peta', sans-serif;
+}
+
+footer{
+  margin-top: 1rem;
 }
 
 .dark-mode {
