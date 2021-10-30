@@ -107,9 +107,6 @@ var randomArray = [
     "“Act as if what you do makes a difference. It does.”",
     "“It does not matter how slowly you go aslong as you do not stop!”",
     "“There is progress wheter you are going forward or backward! The thing is to move!”"
-
-
-
 ]
 
 
