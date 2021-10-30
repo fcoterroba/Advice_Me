@@ -100,7 +100,13 @@ var randomArray = [
     "“It’s the possibility of having a dream come true that makes life interesting.”",
     "“There is some good in this world, and it’s worth fighting for.”",
     "“Learn to light a candle in the darkest moments of someone’s life. Be the light that helps others see; it is what gives life its deepest significance.”",
-    "“Don't judge each day by the harvest you reap but by the seeds that you plant.”"
+    "“Don't judge each day by the harvest you reap but by the seeds that you plant.”",
+    "“It always seems imposible until it's done”",
+    "“Don't watch the clock; do what it does. Keep going.”",
+    "“You will never win if you never begin.”",
+    "“Act as if what you do makes a difference. It does.”",
+    "“It does not matter how slowly you go aslong as you do not stop!”",
+    "“There is progress wheter you are going forward or backward! The thing is to move!”"
 ]
 
 
