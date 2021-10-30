@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" charset="UTF-8">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,6 +12,14 @@
     </label>
     <p class="phrase">Did you need strength to continue?</p>
     <button onclick="changePhrase()">I need advice</button>
+
+    <form action="/action_page.php">
+        <label for="Language">Select a language:</label>
+        <select name="languages" id="languages-list">
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
 
     <script src="background.js"></script>
     <footer class="footer">
