@@ -106,7 +106,13 @@ var randomArray = [
     "“You will never win if you never begin.”",
     "“Act as if what you do makes a difference. It does.”",
     "“It does not matter how slowly you go aslong as you do not stop!”",
-    "“There is progress wheter you are going forward or backward! The thing is to move!”"
+    "“There is progress wheter you are going forward or backward! The thing is to move!”",
+    "“Everything you can imagine is real” - Pablo Picasso",
+   "“If you think you cannot or you think you can, either way you are right”",
+   "“Easy choices, hard life. Hard choices, easy life”",
+   "“Trust, show up & be authentic. Everything else is being taken care of”",
+   "“Give yourself the freedom of no choice”",
+   "“No matter what people or life throw at you, always remain positive”"
 ]
 
 
@@ -134,4 +140,3 @@ fetch('https://api.github.com/repos/fcoterroba/Advice_Me/contributors?per_page=1
     var footer = document.querySelector('.footer');
     footer.innerHTML = text;
 })
-
